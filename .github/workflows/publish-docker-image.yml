@@ -50,9 +50,9 @@ jobs:
           cache-to: type=registry,ref=projecttwelve/blockscout:buildcache,mode=max
           tags: projecttwelve/blockscout:latest, projecttwelve/blockscout:${{ env.RELEASE_VERSION }}
           platforms: |
-            linux/arm64
             linux/amd64
           build-args: |
+            COIN="hP2"
             CACHE_EXCHANGE_RATES_PERIOD=""
             DISABLE_READ_API="false"
             API_PATH="/"
