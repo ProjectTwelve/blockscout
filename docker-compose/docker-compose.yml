@@ -17,7 +17,7 @@ services:
       - db
     build:
       context: ..
-      dockerfile: ./docker/Dockerfile        
+      dockerfile: ./docker/Dockerfile
       args:
         COIN: "hP2"
         CACHE_EXCHANGE_RATES_PERIOD: ""
